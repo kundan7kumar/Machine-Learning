@@ -1,88 +1,74 @@
 # Train a Smartcab How to Drive
 
-Applied reinforcement learning to build a simulated vehicle navigation agent. This project involved modeling a complex control problem in terms of limited available inputs, and designing a scheme to automatically learn an optimal driving strategy based on rewards and penalties.
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
+Applied reinforcement learning to build a simulated vehicle navigation agent. This project involved modeling a complex control problem in terms of limited available inputs, and designing a scheme to automatically learn an optimal driving strategy based on rewards and penalties. 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This project requires **Python 2.7** and the following Python libraries installed:
+
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org/)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [Pygame](https://www.pygame.org/wiki/GettingStarted/)
+
+You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
+
+If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer.
+
+### Installation
+
+A step by step tells how to get a development env running.
+
+First step is to create virtual environment
 
 ```
-Give examples
+python -m pip install --user virtualenv
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+And then create virtual environment
 
 ```
-Give the example
+python -m virtualenv Smartcab
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Now activate virtual environment
 
 ```
-Give an example
+source env/bin/activate
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
+In the virtual environment,install the packages mentioned above.
 
 ```
-Give an example
+pip install numpy pandas 
 ```
+Install the more packages in the virtual Environment.
 
-## Deployment
+```
+python -mpip install matplotlib
+```
+```
+pip install -U scikit-learn
+```
+```
+python -m pip install jupyter
+```
+Also, You can install ananconda which has packages inbuilt to it.
 
-Add additional notes about how to deploy this on a live system
+### Run
 
-## Built With
+In a terminal or command window, navigate to the  project directory `smartcab/` (that contains this README) and run one of the following commands:
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+```bash
+python smartcab/agent.py
+```  
+or
+```bash
+python -m smartcab.agent
+```
+This will run the agent.py file and execute your agent code.
+This will open the Jupyter Notebook software and project file in your browser.
 
 ## License
+@ Kundan Kumar
+This project is licensed under the MIT License [LICENSE.md](https://github.com/kundan7kumar/Machine_Learning/blob/master/Project/smartcab/LICENSE.md) file for details
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 

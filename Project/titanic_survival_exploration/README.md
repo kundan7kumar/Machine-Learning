@@ -86,6 +86,6 @@ The dataset used in this project is included as `titanic_data.csv`. This dataset
 
 ## License
 @ Kundan Kumar
-This project is licensed under the MIT License [LICENSE.md](https://github.com/kundan7kumar/Machine_Learning/blob/master/Project/finding_donors/LICENSE.md) file for details
+This project is licensed under the MIT License [LICENSE.md](https://github.com/kundan7kumar/Machine_Learning/blob/master/Project/titanic_survival_exploration/LICENSE.md) file for details
 
 

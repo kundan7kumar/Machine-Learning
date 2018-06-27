@@ -1,27 +1,60 @@
-# Machine Learning Engineer Nanodegree
-# Supervised Learning
-## Project: Finding Donors for CharityML
+# Finding Donors for CharityML
 
-### Install
+Investigated factors that affect the likelihood of charity donations being made based on real census data. Developed a naive classifier to compare testing results to. Trained and tested several supervised machine learning models on preprocessed census data to predict the likelihood of donations. Selected the best model based on accuracy, a modified F-scoring metric, and algorithm efficiency.
+### Prerequisites
 
 This project requires **Python 2.7** and the following Python libraries installed:
 
 - [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org)
+- [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
 
-You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
+You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
 
-We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
+If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer.
 
-### Code
+### Installation
 
-Template code is provided in the `finding_donors.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `census.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
+A step by step tells how to get a development env running.
+
+First step is to create virtual environment
+
+```
+python -m pip install --user virtualenv
+```
+
+And then create virtual environment
+
+```
+python -m virtualenv finding_donors
+```
+Now activate virtual environment
+
+```
+source env/bin/activate
+```
+In the virtual environment,install the packages mentioned above.
+
+```
+pip install numpy pandas 
+```
+Install the more packages in the virtual Environment.
+
+```
+python -mpip install matplotlib
+```
+```
+pip install -U scikit-learn
+```
+```
+python -m pip install jupyter
+```
+Also, You can install ananconda which has packages inbuilt to it.
 
 ### Run
 
-In a terminal or command window, navigate to the top-level project directory `finding_donors/` (that contains this README) and run one of the following commands:
+In a terminal or command window, navigate to the  project directory `finding_donors/` (that contains this README) and run one of the following commands:
 
 ```bash
 ipython notebook finding_donors.ipynb
@@ -31,10 +64,9 @@ or
 jupyter notebook finding_donors.ipynb
 ```
 
-This will open the iPython Notebook software and project file in your browser.
+This will open the Jupyter Notebook software and project file in your browser.
 
 ### Data
-
 The modified census dataset consists of approximately 32,000 data points, with each datapoint having 13 features. This dataset is a modified version of the dataset published in the paper *"Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid",* by Ron Kohavi. You may find this paper [online](https://www.aaai.org/Papers/KDD/1996/KDD96-033.pdf), with the original dataset hosted on [UCI](https://archive.ics.uci.edu/ml/datasets/Census+Income).
 
 **Features**
@@ -54,3 +86,9 @@ The modified census dataset consists of approximately 32,000 data points, with e
 
 **Target Variable**
 - `income`: Income Class (<=50K, >50K)
+
+## License
+@ Kundan Kumar
+This project is licensed under the MIT License [LICENSE.md](https://github.com/kundan7kumar/Machine_Learning/blob/master/Project/finding_donors/LICENSE.md) file for details
+
+

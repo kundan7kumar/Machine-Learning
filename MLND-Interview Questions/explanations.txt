@@ -1,0 +1,72 @@
+﻿Question 1:
+
+	a. For every character on the s string, remove it in the s string and in the t string if it occurs.
+		a.If at the end the t string is not empty there was at least one character that was not in s,
+		 meaning that s can not contain a substring that is an anagram of t. 
+		b.If t is empty then s did contain a substring that was an anagram of t.
+
+
+	Data Structure: None, two string inputs.
+
+	Efficiency:
+	Time Complexity: O(N) - N is the length of string.
+	Space Complexity: O(1) 
+---------------------
+
+Question 2:
+
+    We create all possible substrings of an input string s .
+        a. Started with the largest substring and minus the last character for each time and so on
+        b. Check each substring vs its inverse
+        c. if substring is larger than current. save it
+
+	Data Structure: none, pretty straightforward,
+
+	Efficiency:
+	Time Complexity: O(n^2) to create all possible substrings
+	Space Complexity: O(1) constant amount for variables
+---------------------
+
+Question 3:
+
+	The Brute force algorithm for this problem is O(2^n). But i solved this problem by Kruskal MST algorithm
+
+	Steps for this problem:
+
+	1. Sort all the edges in non-decreasing order of their weight.
+    2. Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far.
+       If cycle is not formed, include this edge. Else, discard it.
+    3. Repeat step 2 until there are (V-1) edges in the spanning tree.
+
+	Data Structure: Python Dictionary is used for storing and retriving MST .
+
+	Efficiency:
+	Time Complexity: O(ElogE) : E is the edges
+	Space Complexity: O(V)
+---------------------
+
+Question 4:
+
+    Solution is just to find the ancestors of nodes n1 and n2 up to the root and store in the list.
+		After all the ancestors are found, the first common ancestor is the least common ancestor.
+	
+	Data Structure: list to store parent of node
+
+	Efficiency:
+	Time Complexity: O(h)
+	Space Complexity: O(h) height of the binary tree
+---------------------
+
+Question 5:
+
+    Use two pointer left and right pointer at the same point i.e both reference and main pointers to head.
+	Traverse the pointer to a LinkedList.Move the right pointer to n nodes.
+	move both pointers one by one until right pointer reaches end.
+    left pointer will point to nth node from the end. Return its value.
+
+	Data Structure: None.
+
+	Efficiency:
+	Time Complexity =O(N)
+	Space Complexity =O(N) where N is the node of the linked list
+---------------------

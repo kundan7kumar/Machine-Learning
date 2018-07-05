@@ -1,4 +1,4 @@
-# DeepRL Quadcopter Controller
+# DeepRL Quadcopter Controller (Under Progress)
 
 _Teach a Quadcopter How to Fly!_
 

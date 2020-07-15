@@ -44,7 +44,7 @@ In this project, For an given image of a dog, the CNN algorithm will able to ide
 
 #### 7. Machine Learning Capstone Project
 ##### Project Description
-Project will be updated soon!!!!!!!!
+In this project, the model is predicting Stock Market using Recurrent Neural Net basically LSTM Model
 - [Project Files](https://github.com/kundan7kumar/Machine_Learning/tree/master/Capstone-Project)
 
    
